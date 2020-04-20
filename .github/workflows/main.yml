@@ -12,6 +12,11 @@ jobs:
         run: ./gradlew clean buildUberJar
       - name: LS
         run: ls -R
-      - name: Dockerize
-        uses: ./
-        id: action
+#      - name: Dockerize
+#        uses: ./
+#        id: action
+      - name: Upload math result for job 1
+        uses: actions/upload-artifact@v1
+        with:
+          name: artifact
+          path: build/distributions/uberJar/app.jar
