@@ -11,7 +11,7 @@ jobs:
       - name: Building
         run: ./gradlew clean buildUberJar
       - name: LS
-        run ls -R
+        run: ls -R
       - name: Dockerize
         uses: ./docker-action/
         id: action
