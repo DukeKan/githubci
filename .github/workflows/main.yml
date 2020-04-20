@@ -13,5 +13,5 @@ jobs:
       - name: LS
         run: ls -R
       - name: Dockerize
-        uses: ./docker-action/
+        uses: ./
         id: action
